@@ -29,24 +29,24 @@ class DishDetail extends Component {
         if (dish != null) {
             const comments = dish.comments;
             const res = comments.map((element) => {
-                return(
+                return (
                     <span>
-                    {element.comment}<br/>
-                    -- {element.author}<br/><br/>
+                        {element.comment}<br />
+                        -- {element.author}<br /><br />
                     </span>
                 );
             });
             return (
                 <div>
                     <h4>Comments</h4>
-                    {res}                
+                    {res}
                 </div>
             );
         } else {
             return (
                 <div></div>
             );
-        } 
+        }
     };
 
     render() {
