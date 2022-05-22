@@ -4,6 +4,7 @@
 /.pnp.*
 /.yarn
 /yarn.lock
+scratch.txt
 
 # dependencies
 /node_modules
