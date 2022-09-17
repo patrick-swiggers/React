@@ -6,8 +6,13 @@ import AddEmployee from './components/AddEmployee';
 import EditEmployee from './components/EditEmployee';
 import Header from './components/Header';
 import Employees from './pages/Employees';
+import Customers from './pages/Customers';
+import Dictionary from './pages/Dictionary';
+import Definition from './pages/Definition';
+import Error from './components/Error';
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Page1 from './pages/Page1';
+
 
 
 function App() {
@@ -17,7 +22,11 @@ function App() {
       <Header>
         <Routes>
           <Route path='/employees' element={<Employees />} />
-          <Route path='/page1' element={<Page1 />} />
+          <Route path='/definition' element={<Definition />} />
+          <Route path='/dictionary' element={<Dictionary />} />
+          <Route path='/dictionary/:search' element={<Definition />} />
+          <Route path='/customers' element={<Customers />} />
+          <Route path='/*' element = {<Error />}/>
         </Routes>
       </Header>
     </BrowserRouter>
