@@ -10,6 +10,7 @@ import Customers from './pages/Customers';
 import Dictionary from './pages/Dictionary';
 import Definition from './pages/Definition';
 import Error from './components/Error';
+import Customer from './pages/Customer';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -26,6 +27,7 @@ function App() {
           <Route path='/dictionary' element={<Dictionary />} />
           <Route path='/dictionary/:search' element={<Definition />} />
           <Route path='/customers' element={<Customers />} />
+          <Route path='/customers/:id' element={<Customer />} />
           <Route path='/*' element = {<Error />}/>
         </Routes>
       </Header>
