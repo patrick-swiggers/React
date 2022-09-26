@@ -10,7 +10,9 @@ import Customers from './pages/Customers';
 import Dictionary from './pages/Dictionary';
 import Definition from './pages/Definition';
 import Error from './components/Error';
+import NotFound from './components/NotFound';
 import Customer from './pages/Customer';
+
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -28,6 +30,7 @@ function App() {
           <Route path='/dictionary/:search' element={<Definition />} />
           <Route path='/customers' element={<Customers />} />
           <Route path='/customers/:id' element={<Customer />} />
+          <Route path='/404' element = {<NotFound />}/>
           <Route path='/*' element = {<Error />}/>
         </Routes>
       </Header>
